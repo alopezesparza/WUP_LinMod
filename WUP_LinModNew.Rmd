@@ -72,8 +72,8 @@ our adjusted r squared is 0.467 and our residual standard error is 1.226. multip
 mydata<- data.frame(GRIP=88, ARM=104)
 predict.lm(model.1, mydata, interval="prediction")
 ```
-
-
+the value that it predicted was 1.1579392 but it can go down to a -0.8634158 to an upper 
+4.022199  
 
 #### scatterplot with model fit
   
