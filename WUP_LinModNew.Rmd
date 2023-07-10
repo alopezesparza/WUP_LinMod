@@ -46,14 +46,16 @@ basicNN <- ggplot(data, aes(y = SIMS, x = ARM)) +
   theme(plot.title = element_text(hjust = 0.5))
 
 basicNN
-```
-
-
-
+```  
+  
 
 
 
 ### Numerical results
+```{r}
+cor(SIMS~ARM,data=data)
+```
+the numerical results for SIMS~ARM IS 0.6860073. This means there is a fair correlation between the two variables of strength.  
 
 
 ### Inferential  (Build model.1)
