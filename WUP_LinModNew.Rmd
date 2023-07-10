@@ -76,12 +76,25 @@ the value that it predicted was 1.1579392 but it can go down to a -0.8634158 to 
 4.022199  
 
 #### scatterplot with model fit
-  
+```{r}
+basicNN <- ggplot(data, aes(y = SIMS, x = ARM)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "SIMS ~ ARM") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+basicNN
+
+```
+
+
+
+
 
 ## Model 2 SIM~GRIP
 
 ### Now add in scatterplot
-
+ 
 
 ### Numerical results 
 
