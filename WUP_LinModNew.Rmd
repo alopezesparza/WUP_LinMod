@@ -105,7 +105,10 @@ basicNN
 ```
 
 ### Numerical results 
-
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+the numerical results for SIMS~GRIP is 0.6398458. SIMS~ARMS has a higher correlation that SIMS~GRIP
 
 ### Inferential  (Build model.2)
   
