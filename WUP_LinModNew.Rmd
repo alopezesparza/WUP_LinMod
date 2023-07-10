@@ -156,7 +156,8 @@ our adjusted r squared is 0.5358 and our residual standard error is 1.144. makin
 ```{r}
 predict.lm(model.3, mydata, interval="prediction")
 ```  
-the interval goes from -1.1716184 to 2.915777  
+the interval goes from -1.1716184 to 2.915777    
+
 ## Comparing nested models ANOVA Test
 
 
@@ -170,6 +171,18 @@ anova(model.1, model.3)
 the p value is .00000499, which does not have any value. it is comparing the residual standard error from model.1   
 
 ### Model.2 vs Model.3
+```{r}
+anova(model.2, model.3)
+```
+the p value is for this model is a lot smaller than the previous model. there is a big difference between the data models. model 3 is better than models .1 and .2, this was obtained by comparing the models p values  
 
 ## Informally compare Model.1 with model.2
+```{r}
+anova(model.1, model.2)
+```
+we reduced the sum of square errors between these two models. this anova model doesnt show a p value 
+
+
+
+
 
