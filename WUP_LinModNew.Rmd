@@ -115,9 +115,14 @@ the numerical results for SIMS~GRIP is 0.6398458. SIMS~ARMS has a higher correla
 model.2 <- lm(SIMS~GRIP,data=data)
 summary.lm(model.2)
 ``` 
-our adjusted r squared is 0.4053 and our residual standard error is 1.295. comparing the SIMS~GRIP model to the SIMS~ARM model, the SIMS~ARM is the better model
+our adjusted r squared is 0.4053 and our residual standard error is 1.295. comparing the SIMS~GRIP model to the SIMS~ARM model, the SIMS~ARM is the better model  
 
 #### predict model.2 at target point
+
+```{r}
+predict.lm(model.2, mydata, interval="prediction")
+```
+the interval goes from -3.38434 to 1.766475  
 
 #### now add the model fit to our plot for model.2
   
