@@ -140,8 +140,10 @@ mygrip
 ## Model 3 SIM~ARM+GRIP
 
 ### Numerical results (cor)
-
-`
+```{r}
+cor(SIMS~ARM+GRIP,data=data)
+```
+the correlation is larger and SIMA~ARM and SIMS~GRIP. with all three together makes a greater correlation of 0.7326545
   
 ### Inferential  (Build 2-dimentional model.3)
 
