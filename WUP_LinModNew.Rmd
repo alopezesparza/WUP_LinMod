@@ -153,8 +153,10 @@ summary.lm(model.3)
 our adjusted r squared is 0.5358 and our residual standard error is 1.144. making this model better than the other two. model is SIMS= .037311 * ARM + .0.024470 * GRIP -5.433871  
 
 #### predict model.3 at target point
-
-
+```{r}
+predict.lm(model.3, mydata, interval="prediction")
+```  
+the interval goes from -1.1716184 to 2.915777  
 ## Comparing nested models ANOVA Test
 
 ### Model.1 vs Model.3
