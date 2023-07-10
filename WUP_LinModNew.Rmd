@@ -111,7 +111,11 @@ cor(SIMS~GRIP,data=data)
 the numerical results for SIMS~GRIP is 0.6398458. SIMS~ARMS has a higher correlation that SIMS~GRIP
 
 ### Inferential  (Build model.2)
-  
+```{r}
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.2)
+``` 
+our adjusted r squared is 0.4053 and our residual standard error is 1.295. comparing the SIMS~GRIP model to the SIMS~ARM model, the SIMS~ARM is the better model
 
 #### predict model.2 at target point
 
