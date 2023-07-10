@@ -150,10 +150,10 @@ the correlation is larger and SIMS~ARM and SIMS~GRIP. with all three together ma
 model.3 <- lm(SIMS~ARM+GRIP,data=data)
 summary.lm(model.3)
 ```
-our adjusted r squared is 0.5358 and our residual standard error is 1.144. making this model better than the other two 
+our adjusted r squared is 0.5358 and our residual standard error is 1.144. making this model better than the other two. model is SIMS= .037311 * ARM + .0.024470 * GRIP -5.433871  
 
 #### predict model.3 at target point
-  
+
 
 ## Comparing nested models ANOVA Test
 
