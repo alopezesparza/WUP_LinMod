@@ -94,7 +94,15 @@ basicNN
 ## Model 2 SIM~GRIP
 
 ### Now add in scatterplot
- 
+
+```{r}
+basicNN <- ggplot(data, aes(y = SIMS, x = GRIP)) +
+  geom_point() +
+  labs(title = "SIMS and GRIP") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+basicNN
+```
 
 ### Numerical results 
 
